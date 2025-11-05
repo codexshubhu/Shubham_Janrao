@@ -86,3 +86,25 @@ plot(xAxisArrayXCoords, xAxisArrayYCoords , "r",yAxisArrayXCoords, yAxisArrayYCo
 end
 
 forward analysis of kinematics 2R
+clc; clear all; clf; %good set for each matlab program
+a1=1;
+a2=0.75;
+% dof
+theta1Deg = 30;
+theta2Deg = 60;
+% in radians
+theta1= theta1Deg*pi/180;
+theta2= theta2Deg*pi/180;
+ax=a1*cos(theta1);
+ay=a1*sin(theta1);
+bx=ax + a2*cos(theta1+theta2); %FKin
+by=ay + a2*sin(theta1+theta2); %FKin
+xAxisArrayXCoords = [-2 2];
+xAxisArrayYCoords = [0 0];
+yAxisArrayXCoords = [0 0];
+yAxisArrayYCoords = [-2 2];
+link1XCoords= [0 ax];
+link1YCoords= [0 ay];
+link2XCoords= [ax bx];
+link2YCoords= [ay by];
+plot(xAxisArrayXCoords, xAxisArrayYCoords , "r",yAxisArrayXCoords, yAxisArrayYCoords , "g",link1XCoords,link1YCoords,"b",link2XCoords,link2YCoords,"c");
