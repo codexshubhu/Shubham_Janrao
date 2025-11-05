@@ -84,3 +84,5 @@ plot(xAxisArrayXCoords, xAxisArrayYCoords , "r",yAxisArrayXCoords, yAxisArrayYCo
 hold on; %two plots on same graph
 plot(xAxisArrayXCoords, xAxisArrayYCoords , "r",yAxisArrayXCoords, yAxisArrayYCoords , "g",link1XCoords_2,link1YCoords_2 ,"-.b",link2XCoords_2,link2YCoords_2,"-.c");
 end
+
+forward analysis of kinematics 2R
