@@ -108,3 +108,5 @@ link1YCoords= [0 ay];
 link2XCoords= [ax bx];
 link2YCoords= [ay by];
 plot(xAxisArrayXCoords, xAxisArrayYCoords , "r",yAxisArrayXCoords, yAxisArrayYCoords , "g",link1XCoords,link1YCoords,"b",link2XCoords,link2YCoords,"c");
+
+1R forward analysis 
